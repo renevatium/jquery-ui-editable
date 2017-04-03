@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="title" content="Developmental - jQuery UI Editable" />
+  <meta name="description" content="Developmental jQuery UI Editable Plugin" />
+  <meta name="keywords" content="Developmental, jquery, jqueryui, wysiwyg, jquery wysiwyg, editable" />
+  <meta name="language" content="en" />
+  <title>jQuery UI Editable</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.14.2/codemirror.js"></script>
+  <script type="text/javascript" src="jquery.ui.editable.src.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/ui/1.12.0/themes/flick/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.editable.css" />
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      $.ajaxSetup({ cache: false });
+      $("#menu").find('a').click(function(e){
+        $("#demo").load($(this).attr('href'));
+        e.preventDefault();
+      });
+      $("#default").click();
+    });
+  </script>
+
+</head>
+<body>
+
+<h1>jQuery UI Editable</h1>
+
+<div id="menu" style="display:block;float:left;width:200px;">
+  <ul style="list-style:none;margin:0;padding:0;">
+    <li><a href="examples/default.html" id="default">Default Functionality</a></li>
+  </ul>
+</div>
+
+<div id="demo" style="display:block;float:left;width:800px;height:400px;">
+</div>
+
+</body>
+</html>

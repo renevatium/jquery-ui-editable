@@ -1,0 +1,26 @@
+{
+  "name": "jquery-ui-editable",
+  "version": "0.1.0",
+  "description": "Simple JQuery UI WYSIWYG",
+  "main": "jquery.ui.editable.src.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renevatium/jquery-ui-editable.git"
+  },
+  "keywords": [
+    "jquery",
+    "jquery ui",
+    "wysiwyg",
+    "editable"
+  ],
+  "author": "Renevatium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renevatium/jquery-ui-editable/issues"
+  },
+  "homepage": "https://github.com/renevatium/jquery-ui-editable#readme"
+}

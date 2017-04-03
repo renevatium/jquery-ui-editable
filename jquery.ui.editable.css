@@ -1,0 +1,352 @@
+.editable {
+  font-size: 13px;
+  font-family: calibri, tahoma, "Trebuchet MS";
+}
+
+.editable.fullscreen {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+.editable .document {
+  display: block;
+  padding: 5px;
+  border-left: 1px solid #C0C0C0;
+  border-right: 1px solid #C0C0C0;
+  background-color: #ffffff;
+  outline: 0;
+  white-space: normal;
+  clear: left;
+  font-size: 13px;
+  font-family: calibri;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.editable .document th, .editable .document td {
+  border: 1px dashed #BBBBBB;
+}
+
+.editable .document a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.editable .document pre {
+  margin: 10px;
+  padding: 10px;
+  font-family: courier;
+  white-space: normal;
+  background: #F4F4F4;
+}
+
+.editable .document ul {
+  margin-top: 10px;
+  padding-left: 40px;
+  list-style: outside;
+}
+
+.editable .document ol {
+  margin-top: 10px;
+  padding-left: 40px;
+  list-style: decimal;
+}
+
+.editable .document .paste {
+  display: none;
+}
+
+.editable .source {
+  display: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-left: 1px solid #C0C0C0;
+  border-right: 1px solid #C0C0C0;
+  outline: 0;
+  clear: left;
+  font-size: 13px;
+  font-family: calibri, tahoma, "Trebuchet MS";
+  overflow-y: scroll;
+  resize: none;
+}
+
+.editable .statusbar {
+  display: block;
+  height: 32px;
+  border: 1px solid #C0C0C0;
+  background-color: #E3E3E3;
+}
+
+.editable .statusbar .review {
+  line-height: 32px;
+  font-size: 11px;
+  margin-left: 5px;
+  color: #444444;
+}
+
+.editable .statusbar .resize {
+  display: block;
+  margin: 20px 1px 0 0;
+  width: 11px;
+  height: 11px;
+  float: right;
+  cursor: nw-resize;
+  background: transparent url(images/icons.png) -349px -29px no-repeat;
+}
+
+.editable .taskbar {
+  display: block;
+  padding: 0 2px 2px 2px;
+  border: 1px solid #C0C0C0;
+  background-color: #E3E3E3;
+  clear: right;
+}
+
+.editable .taskbar .group {
+  display: block;
+  height: 23px;
+  clear: right;
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+
+.editable .taskbar .end {
+  display: block;
+  clear: left;
+}
+
+.editable .taskbar .space{
+  display: block;
+  float: left;
+  height: 20px;
+  width: 0px;
+  margin: 3px 4px 0 2px;
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #C0C0C0;
+}
+
+.editable .taskbar .task {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  outline: 0;
+  margin: 2px 2px 0 0;
+  text-decoration: none;
+  border: 1px solid #C0C0C0;
+  background: #F9F9F9 url(images/icons.png) 0 0 no-repeat;
+}
+
+.editable .taskbar .task:hover {
+  cursor: pointer;
+  border-color: #777777;
+  background-color: #D5D5D5;
+}
+
+.editable .taskbar .task.active {
+  border-color: #777777;
+  background-color: #D5D5D5;
+}
+
+.editable .taskbar .bold { background-position: -20px 0; }
+.editable .taskbar .italic { background-position: -40px 0; }
+.editable .taskbar .underline { background-position: -60px 0; }
+.editable .taskbar .left { background-position: -80px 0; }
+.editable .taskbar .center { background-position: -100px 0; }
+.editable .taskbar .right { background-position: -120px 0; }
+.editable .taskbar .justify { background-position: -140px 0; }
+.editable .taskbar .ul { background-position: -160px 0; }
+.editable .taskbar .ol { background-position: -180px 0; }
+.editable .taskbar .link { background-position: -200px 0; }
+.editable .taskbar .unlink { background-position: -220px 0; }
+.editable .taskbar .media { background-position: -260px 0; }
+.editable .taskbar .fullscreen { background-position: -280px 0; }
+.editable .taskbar .code { background-position: -340px 0; }
+.editable .taskbar .strike { background-position: -60px -20px; }
+.editable .taskbar .quote { background-position: -80px -20px; }
+.editable .taskbar .color { background-position: -120px -20px; }
+
+.editable .taskbar .fullscreen.active {
+  border-color: #C0C0C0;
+  background-color: #F9F9F9;
+  background-position: -300px 0;
+}
+
+.editable .taskbar .color .value {
+  display: block;
+  position: relative;
+  top: 16px;
+  height: 3px;
+  width: 16px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.editable .taskbar .dropdown { background-image: none; }
+.editable .taskbar .dropdown:hover { border-color: #C0C0C0; background-color: #F9F9F9; }
+.editable .taskbar .dropdown:hover .select { background-color: #D5D5D5; }
+
+.editable .taskbar .dropdown .value {
+  float: left;
+  position: absolute;
+  height: 19px;
+  padding: 1px 0 0 5px;
+  color: #353535;
+  border-right: 1px solid #C0C0C0;
+  background-color: #ffffff;
+}
+
+.editable .taskbar .dropdown .values {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: -1px;
+  padding: 2px 5px;
+  border: 1px solid #C0C0C0;
+  background-color: #ffffff;
+}
+
+.editable .taskbar .font { width: 130px; }
+.editable .taskbar .font .value { width: 105px; }
+.editable .taskbar .font .values { width: 120px; }
+
+.editable .taskbar .fontsize { width: 60px; }
+.editable .taskbar .fontsize .value { width: 35px; }
+.editable .taskbar .fontsize .values { width: 50px; }
+
+.editable .taskbar .format { width: 100px; }
+.editable .taskbar .format .value { width: 75px; }
+.editable .taskbar .format .values { width: 90px; }
+
+.editable .taskbar .dropdown .select {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: #F9F9F9 url(images/icons.png) -320px -20px no-repeat;
+}
+
+.editable .taskbar .dropdown .values span { display: block; color: #353535; }
+.editable .taskbar .dropdown .values span:hover { color: #000000; font-weight: bold; }
+
+.lightbox {
+  display: block;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.popbox {
+  display: block;
+  position: absolute;
+  z-index: 9000;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  border: 1px solid #252728;
+  border-radius: 1px;
+  background-clip: border-box;
+}
+
+.popbox .data {
+  display: block;
+  min-height: 45px;
+  min-width: 245px;
+  padding: 10px;
+}
+
+.popbox .data label {
+  display: block;
+}
+
+.popbox .data input[type="text"] {
+  width: 320px;
+}
+
+.popbox .actions {
+  display: block;
+  clear: both;
+  text-align: right;
+  padding: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.popbox .actions a, .popbox .actions span {
+  line-height: 32px;
+}
+
+.popbox .actions input[type="button"] {
+  font-size: 13px;
+  padding: 8px 8px;
+  color: #888888;
+  margin-right: 5px;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  background-clip: border-box;
+  background-color: #DEDEDE;
+  background-image: -moz-linear-gradient(top, #FEFEFE, #DEDEDE);
+}
+
+.popbox .actions input[type="button"]:last-child {
+  margin-right: 0;
+}
+
+.popbox .actions input[type="button"]:hover {
+  cursor: pointer;
+  color: #000000;
+  border-color: #999999;
+}
+
+.popbox .actions .left {
+  float: left;
+}
+
+.popbox .colors .box {
+  display: block;
+  width: 248px;
+  height: 18px;
+  margin-bottom: 5px;
+  cursor: crosshair;
+  border: 1px solid #252728;
+}
+
+.popbox .colors .preview {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  clear: both;
+  border: 1px solid #252728;
+}
+
+.popbox .colors input.hex[type="text"] {
+  width: 60px;
+  margin-left: 5px;
+}
+
+.popbox .colors .defaults {
+  display: block;
+  float: right;
+  cursor: pointer;
+  width: 120px;
+}
+
+.popbox .colors .defaults .preview {
+  float: right;
+  clear: none;
+  margin-left: 2px;
+}
+
+.popbox .selected img {
+  -moz-box-shadow: 0px 0px 4px 2px #2A6B93;
+  -webkit-box-shadow: 0px 0px 4px 2px #2A6B93;
+  box-shadow: 0px 0px 4px 2px #2A6B93;
+}
